@@ -1,16 +1,11 @@
-"use client";
-import { useState } from "react";
+import Hero from "@/components/hero";
+import homeSrc from "@/public/home.png";
+export const metadata = {
+  title: "Home ",
+  description: "Welcome to the home page",
+};
 export default function Home() {
-  const [num, setNum] = useState(0);
-  const onClick = () => {
-    setNum(num + 1);
-  };
   return (
-    <div>
-      <>
-        <div>{num}</div>
-        <button onClick={onClick}>还是喜欢敲代码</button>
-      </>
-    </div>
+    <Hero imgUrl={homeSrc} altTxt="Home" content="Welcome to our website" />
   );
 }

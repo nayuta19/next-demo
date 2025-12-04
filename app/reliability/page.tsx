@@ -1,5 +1,11 @@
-import React from "react";
-
-export default function page() {
-  return <div>page</div>;
+import Hero from "@/components/hero";
+import reliabilitySrc from "@/public/home.png";
+export const metadata = {
+  title: "Reliability ",
+  description: "Welcome to the reliability page",
+};
+export default function Home() {
+  return (
+    <Hero imgUrl={reliabilitySrc} altTxt="reliability" content="reliability" />
+  );
 }
