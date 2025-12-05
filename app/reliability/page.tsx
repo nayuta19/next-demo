@@ -1,5 +1,5 @@
 import Hero from "@/components/hero";
-import reliabilitySrc from "@/public/home.png";
+import reliabilitySrc from "@/public/reliability.png";
 export const metadata = {
   title: "Reliability ",
   description: "Welcome to the reliability page",

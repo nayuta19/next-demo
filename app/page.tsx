@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import homeSrc from "@/public/home.png";
+
 export const metadata = {
   title: "Home ",
   description: "Welcome to the home page",
