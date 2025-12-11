@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import { Button } from "antd";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,8 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <AntdRegistry>
+          <Button type="primary">Button</Button>
+          <Header />
+          {children}
+        </AntdRegistry>
       </body>
     </html>
   );
